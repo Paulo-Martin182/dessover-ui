@@ -1,0 +1,4 @@
+{
+  "extends": "@dessover/ts-config/base.json",
+  "include": ["src"]
+}
