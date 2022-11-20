@@ -1,0 +1,2 @@
+import{A as t}from"./index.c9b57191.js";import"./index.22f94f9f.js";import"./iframe.2902b95b.js";import"./index.b5bc2e3a.js";import"./jsx-runtime.4748d221.js";const p={title:"Data display/Avatar",component:t,args:{src:"https://github.com/Paulo-Martin182.png",alt:"Paulo Martin"},argTypes:{src:{control:{type:"text"}}}},c={},l={args:{src:void 0}},m=["Primary","WithFallback"];export{c as Primary,l as WithFallback,m as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.e352a6e4.js.map
