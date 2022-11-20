@@ -13,3 +13,5 @@ export function TextInput({ prefix, ...props }: TextInputProps) {
 export interface TextInputProps extends ComponentProps<typeof S.Input> {
   prefix?: string
 }
+
+TextInput.displayName = 'TextInput'

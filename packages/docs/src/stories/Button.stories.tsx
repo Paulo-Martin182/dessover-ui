@@ -2,18 +2,39 @@ import { Meta, StoryObj } from '@storybook/react'
 import { ArrowRight } from 'phosphor-react'
 import { Button, ButtonProps } from '@dessover/react'
 
+function handleClick() {
+  console.log('Clicked!!')
+}
+
 export default {
   title: 'Form/Button',
   component: Button,
 
   args: {
     children: 'OK',
+    variant: 'primary',
+    size: 'md',
+    disabled: false,
   },
   argTypes: {
+    onClick: {
+      action: 'click',
+    },
     variant: {
       options: ['primary', 'secondary'],
       control: {
-        type: 'select',
+        type: 'inline-radio',
+      },
+    },
+    size: {
+      options: ['sm', 'md'],
+      control: {
+        type: 'inline-radio',
+      },
+    },
+    disabled: {
+      control: {
+        type: 'boolean',
       },
     },
   },
@@ -35,5 +56,12 @@ export const WithIcon: StoryObj<ButtonProps> = {
         <ArrowRight weight="bold" />
       </>
     ),
+  },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
   },
 }

@@ -17,7 +17,7 @@ export const TextArea = styled('textarea', {
 
   '&:focus': {
     outline: 0,
-    borderColor: '$ignite300',
+    borderColor: '$green300',
   },
 
   '&:disabled': {
@@ -31,3 +31,5 @@ export const TextArea = styled('textarea', {
 })
 
 export interface TextAreaProps extends ComponentProps<typeof TextArea> {}
+
+TextArea.displayName = 'TextArea'
